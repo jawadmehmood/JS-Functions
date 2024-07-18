@@ -71,23 +71,24 @@ square(5);
 
 // Assignment 7
 
-// function factorialOfNum(){
-//     var num6 = +prompt('Enter a number to calculate its factorial');
-//     if(num6 < 0){
-//         console.log('Factorial of negative integers does not exist');
-//     }
-//     else if(num6 === 0){
-//         console.log('Factorial of ' + num6 + ' is 1.');
-//     }
-//     else{
-//         num7 = num6 - 1;
-//         num8 = num6 * num7;
-//         console.log(num8);
-//         factorialOfNum();
-//     }
-// }
+let num6 = +prompt('Enter a number to calculate its factorial');
 
-// factorialOfNum();
+function factorialOfNumber(){
+    if(num6 < 0){
+        console.log('The factorial of negative integer does not exist');
+    }
+    else if(num6 === 0){
+        console.log('The factorial of zero is 1.');
+    }
+    else{
+        let fact = 1
+        for(i = 1 ; i <= num6 ; i++){
+            fact *= i;
+        }
+        console.log('The factorial of ' + num6 + ' is ' + fact);
+    }
+}
+factorialOfNumber();
 
 // Assignment 8
 
@@ -108,4 +109,20 @@ function counting(){
 counting();
 
 // Assignment 9
+
+function calculateHypotenuse(){
+    let base = +prompt('Enter value of base');
+    let perpendicular = +prompt('Enter value of perpendicular');
+    function calculateSquare(){
+        let baseSquare = base ** 2;
+        let perpendicularSquare = perpendicular ** 2;
+        let hypotenuseSquare = baseSquare + perpendicularSquare;
+        console.log('Hypotenuse Square = ' + hypotenuseSquare);
+    }
+    calculateSquare() 
+}
+
+calculateHypotenuse();
+
+// Assignment 10
 
