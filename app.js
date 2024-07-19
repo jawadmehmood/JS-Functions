@@ -124,5 +124,97 @@ function calculateHypotenuse(){
 
 calculateHypotenuse();
 
-// Assignment 10
+// Assignment 12
 
+function areaOfRectangle(width , height){
+    return width * height;
+}
+
+let width = 4;
+let height = 3;
+
+console.log('The area of rectangle is ' + areaOfRectangle(width , height));
+console.log('The area of rectangle is ' + areaOfRectangle(5 , 6));
+
+// Assignment 15
+
+var param = function inner(){
+    return typeof inner;
+}
+alert(param());
+
+// Assignment 16
+
+function powerOfANumber(base , exponent){
+    return base**exponent;
+}
+
+console.log('5 to the power 3 is ' + powerOfANumber(5 , 3));
+
+// Assignment 23
+
+function returnType(input){
+    return typeof input;
+}
+
+console.log('The type of 12 is ' + returnType(12));
+console.log('The type of "Hello" is ' + returnType('Hello'));
+console.log('The type of true is ' + returnType(true));
+console.log('The type of {} is ' + returnType({}));
+console.log('The type of function() {} is ' + returnType(function() {}));
+console.log('The type of () is ' + returnType());
+
+// Assignment 26
+
+let date = new Date();
+let currentYear = date.getFullYear();
+
+function calculateAge(birthYear , currentYear){
+    return 'You are either ' + (currentYear - birthYear - 1) + ' or ' + (currentYear - birthYear) + ' years old';
+}
+console.log(calculateAge(2000 , currentYear));
+console.log(calculateAge(1995 , currentYear));
+console.log(calculateAge(1990 , currentYear));
+
+// Assignment 27
+
+function calculateSupply(age , amountPerDay){
+    let maxAge = 80;
+    return 'You will need ' + ((maxAge - age) * amountPerDay) + ' oreo biscuits to last you until the ripe old age of ' + maxAge;
+}
+
+console.log(calculateSupply(24 , 2));
+console.log(calculateSupply(23 , 3));
+console.log(calculateSupply(22 , 4));
+
+// Assignment 28
+
+function calcCircumference(radius){
+    let circumference = 2 * 3.142 * radius;
+    return 'The circumference of a circle is ' + circumference;
+}
+
+console.log(calcCircumference(4));
+
+function calcArea(radius){
+    let area = 3.142 * (radius**2);
+    return 'The area of a circle is ' + area;
+}
+
+console.log(calcArea(4));
+
+// Assignment 29
+
+function celsiusToFahrenheit(celsius){
+    let fahrenheit = ((9/5) * celsius) + 32;
+    return celsius + 'C is ' + fahrenheit + 'F'; 
+}
+
+console.log(celsiusToFahrenheit(10));
+
+function fahrenheitToCelsius(fahrenheit){
+    let celsius = 5/9 * (fahrenheit - 32);
+    return fahrenheit + 'F is ' + celsius + 'C';
+}
+
+console.log(fahrenheitToCelsius(50));
